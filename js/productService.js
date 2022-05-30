@@ -13,6 +13,15 @@ const retrieveProducts = () => {
     } );
 }
 
+const search = () => {
+    const searchInput = document.querySelector('#search_input');
+    const searchPhrase = searchInput.value;
+
+    alert(searchPhrase);
+
+    return false;
+}
+
 retrieveProducts()
     .then( products => {
         const wrapper = document.querySelector('#products__wrapper');
@@ -20,7 +29,7 @@ retrieveProducts()
             wrapper.innerHTML += `
                 <div class="product">
                     <div class="product__img"
-                         style="background-image: url('img/${product.id}.jpg')">
+                         style="background-image: url('img/car.jpeg')">
                     </div>
 
                     <div class="product__content">

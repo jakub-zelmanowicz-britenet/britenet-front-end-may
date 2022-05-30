@@ -42,7 +42,6 @@ body {
 }
 
 .product {
-    width: 31%;
     border: 1px solid #ececec;
     border-radius: 5px;
 }
@@ -62,4 +61,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* Dla urządzeń o dł. ekranu max. 500px (np. telefon) */
+@media only screen and (max-width: 500px) {
+
+    .product {
+        width: 100%;
+    }
+}
+
+/* Dla urządzeń o dł. ekranu min. 500px (np. komputer) */
+@media only screen and (min-width: 500px) {
+
+    .product {
+        width: 31%;
+    }
 }
